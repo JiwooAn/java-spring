@@ -7,10 +7,10 @@ import service.GreetingService;
 
 @RestController
 public class GreetingController {
-    static String result;
+    String result;
     
     @GetMapping("/greeting")
-    public static String greeting() {
+    public String greeting() {
         result = GreetingService.greeting();
         return result;
     }
